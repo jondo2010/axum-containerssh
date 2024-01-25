@@ -7,10 +7,10 @@ use validator::Validate;
 use crate::header;
 use crate::{models, types::*};
 
-      
-      
-      
-      
+
+
+
+
 
 
 
@@ -29124,7 +29124,9 @@ impl std::ops::DerefMut for PullPolicy {
     }
 }
 
-
+#[derive(Debug, Clone, PartialEq, PartialOrd, serde::Serialize, serde::Deserialize)]
+#[cfg_attr(feature = "conversion", derive(frunk::LabelledGeneric))]
+pub struct Quantity(String);
 
 /// Quobyte volumes do not support ownership management or SELinux relabeling.
 
