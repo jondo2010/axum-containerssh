@@ -4,6 +4,7 @@ version = "0.5.0"
 authors = ["OpenAPI Generator team and contributors"]
 description = "This OpenAPI document describes the API endpoints that are required for implementing an authentication and configuration server for ContainerSSH. (See https://github.com/containerssh/libcontainerssh for details.)"
 edition = "2021"
+license = "Apache-2.0"
 
 [features]
 default = ["server"]
