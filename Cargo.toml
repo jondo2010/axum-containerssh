@@ -21,6 +21,7 @@ conversion = [
 async-trait = "0.1"
 axum = { version = "0.7" }
 axum-extra = { version = "0.9", features = ["cookie", "multipart"] }
+axum-macros = { version = "0.4" }
 base64 = "0.21"
 bytes = "1"
 chrono = { version = "0.4", features = ["serde"] }
