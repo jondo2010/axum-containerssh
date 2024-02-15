@@ -27,9 +27,7 @@ pub const API_VERSION: &str = "0.5.0";
 #[allow(clippy::large_enum_variant)]
 pub enum AuthPasswordResponse {
     /// Response is the full HTTP authentication response.
-    Status200_ResponseIsTheFullHTTPAuthenticationResponse(
-        std::collections::HashMap<String, models::BinaryMetadataValue>,
-    ),
+    Status200_ResponseIsTheFullHTTPAuthenticationResponse(models::AuthResponseBody),
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
@@ -37,9 +35,7 @@ pub enum AuthPasswordResponse {
 #[allow(clippy::large_enum_variant)]
 pub enum AuthPubKeyResponse {
     /// Response is the full HTTP authentication response.
-    Status200_ResponseIsTheFullHTTPAuthenticationResponse(
-        std::collections::HashMap<String, models::BinaryMetadataValue>,
-    ),
+    Status200_ResponseIsTheFullHTTPAuthenticationResponse(models::AuthResponseBody),
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
@@ -47,9 +43,7 @@ pub enum AuthPubKeyResponse {
 #[allow(clippy::large_enum_variant)]
 pub enum AuthzResponse {
     /// Response is the full HTTP authentication response.
-    Status200_ResponseIsTheFullHTTPAuthenticationResponse(
-        std::collections::HashMap<String, models::BinaryMetadataValue>,
-    ),
+    Status200_ResponseIsTheFullHTTPAuthenticationResponse(models::AuthResponseBody),
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
